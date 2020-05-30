@@ -1,0 +1,91 @@
+.background
+{
+  background-image: url("Main Picture.jpg");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center
+}
+.title
+{
+  color: white;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%)
+}
+.table
+{
+  margin-left: auto;
+  margin-right: auto;
+}
+.td
+{
+  font-size: large;
+  font-weight: bold;
+  color: white;
+}
+.whitebox
+{
+  margin: auto;
+  height: 15%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: rgba(255,255,255,0.5);
+}
+.icon
+{
+  flex-grow: 1;
+  padding: 20px
+}
+.heading_and_quote
+{
+  flex-grow: 8;
+  text-align: center;
+}
+.empty
+{
+  flex-grow: 1;
+  content: '.';
+  visibility: hidden;
+  padding: 20px
+}
+.bottom
+{
+  margin: 2%;
+  height: 85%;
+  position: relative;
+  overflow: hidden;
+}
+.textbox
+{
+  background-color: rgb(255,255,255);
+  margin: 1%;
+  height: 100%;
+  float:left;
+  width: 73%;
+  padding: 1%;
+  overflow:hidden;
+  text-align:left;
+}
+.comment
+{
+  background-color: rgb(255,255,255);
+  height: 100%;
+  align-items: center;
+  padding: 1%;
+}
+.commentbox
+{
+  background-color: rgb(255,255,255);
+  height: 100%;
+  align-items: center;
+  margin: 1%;
+  width: 23%;
+  overflow:hidden;
+  padding: 1%;
+}
