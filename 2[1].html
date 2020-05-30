@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <title>My Webpage</title>
+        <script>
+            function greet()
+            {
+                let name = document.querySelector('#name').value;
+                alert('Thank you, ' + name + "!");
+            }
+            function appendList()
+            {
+                document.getElementById("name_label").attribute = "";
+                document.getElementById("message_label").attribute = "";
+
+                var element = document. getElementById("no_comments");
+                if (element != null){
+                    element. parentNode. removeChild(element);}
+
+                var list_name_message = document.createElement("div");
+                list_name_message.style.textAlign = "left";
+
+                var listname = document.createElement("a");
+                listname.style.boxSizing = "inherit";
+                let name = document.querySelector('#name').value;
+                var t = document.createTextNode(name + "  ");
+                listname.appendChild(t);
+                listname.style.fontWeight = 'bold';
+
+                var listmessage = document.createElement("a");
+                listname.style.boxSizing = "inherit";
+                let message = document.querySelector('#message').value;
+                var u = document.createTextNode(message);
+                listmessage.appendChild(u);
+
+                list_name_message.appendChild(listname);
+                list_name_message.appendChild(listmessage);
+
+                document.getElementById("list").appendChild(list_name_message);
+
+            }
+        </script>
+    </head>
+
+    <body class = "background";>
+        <div>
+            <div class = "whitebox">
+                <a href="index.html">
+                    <div class="fa fa-home w3-xxlarge icon"></div>
+                </a>
+                <div class = "heading_and_quote">
+                    <h1>
+                        Day 60
+                    </h1>
+                    <i>
+                        Python (not the snake!!)
+                    </i>
+                </div>
+                <a href="index.html">
+                    <div class="fa fa-home w3-xxlarge icon empty"></div>
+                </a>
+            </div>
+            <div class = "bottom">
+                <div class = "textbox">
+                    <p> Python really sped up the process of coding alot. In layman terms, C is more "computer language" than python is. THe syntax that Python uses makes it easier for beginners like us learn and apply advanced functions like dictionaries, lists, hash tables more quickly and effectively. Although the ease of coding compromises the processing speed, i feel that it is a language that i will most likely advance in. But ultimately, i feel that having a base in C, and subsequently moving on to Python really gives you a good foundation.  </p>
+                    <p> Now, i will move on to the next of my life: Getting Interviews</p>
+                </div>
+                <div class = "commentbox">
+                    <!--list to add here-->
+                    <div>
+                        <ul class = "comment" id="list">
+                            <p id = "no_comments">
+                                No comments yet.
+                            </p>
+                        </ul>
+                    </div>
+
+                    <!--name and comment here-->
+                    <div style= "margin:5px">
+                        <form onsubmit = "greet(); appendList(); return false;">
+                          <div class="col-xs-2">
+                            <label for="name" id="name_label">Name:</label>
+                            <input type="name" class="form-control" id="name">
+                          </div>
+                          <div class="col-xs-2">
+                            <label for="pwd" id="message_label">Insert a comment</label>
+                            <input type="message" class="form-control" id="message">
+                          </div>
+                          <button type="submit" class="btn btn-default" id="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
